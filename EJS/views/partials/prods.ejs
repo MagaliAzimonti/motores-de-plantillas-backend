@@ -1,0 +1,30 @@
+<div style="width:100%; max-width:600px; margin: 20px auto;">
+<div>
+    <h2 style="color: white;">Lista de productos</h2>
+    <% if (products.length > 0) { %>
+     <table class="table table-striped table-dark table-hover">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Marca</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for( product of products ) { %>
+            <tr>
+                <th><%= product.id %> </th>
+                <th><%= product.nombre %> </th>
+                <th> $ <%= product.precio %> </th>
+                <th><%= product.marca %> </th>
+            </tr>
+            <% } %>
+        </tbody>
+     </table>
+    <% } else { %>
+        <p class="alert alert-danger">No hay productos en la lista</p>
+    <%} %>
+</div>
+</div>
+<br>

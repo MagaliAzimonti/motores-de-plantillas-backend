@@ -1,0 +1,35 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="contact__title">
+            <h1 class="text-center mt-4 p-3 text-white">Formulario de productos</h1>
+            <hr class="mb-4">
+        </div>
+        <div class="row ">
+            <div class="col-md-6 shadow rounded p-4 mb-4 bg-light">
+                <p>Agregue un nuevo producto:</p>
+                <form action="/products" method="POST">
+                    <div class="contact__name">
+                        <div class="col mb-3 p-md-2">
+                            <label class="form-label"> Nombre</label>
+                            <input type="text" name="nombre" class="form-control" placeholder="Ej: Esmalte Top Coat" >
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label"> Precio</label>
+                        <input type="number" name="precio" class="form-control" placeholder="Ej: 1200" >
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Marca</label>
+                        <input type="text" name="marca" class="form-control" placeholder="Ej: Semilla">
+                    </div>
+                   <!--  <div class="col mb-3 p-md-2">
+                        <label class="form-label"> ID</label>
+                        <input type="number" name="id" class="form-control" placeholder="Ej: 1" required>
+                    </div> -->
+                    <input class="btn btn-primary" type="submit" value="Enviar">
+                    <input class="btn btn-primary" type="reset" value="Limpiar">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
